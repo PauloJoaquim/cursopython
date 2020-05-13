@@ -1,5 +1,7 @@
+#PAULO
 #Não consegui fazer os números pares
-n1 = int(input('Digite um valor: '))
+# meu código é iviavel comparando com do GUANABARA
+'''n1 = int(input('Digite um valor: '))
 n2 = int(input('Digite um valor: '))
 n3 = int(input('Digite um valor: '))
 n4 = int(input('Digite um valor: '))
@@ -29,4 +31,20 @@ elif n3 == 3:
 elif n4 == 3:
     print('O primeiro valor 3 foi digitado na 4° posição')
 else:
+    print('O valor 3 não foi digitado em nenhuma posição')'''
+
+#GUANABARA
+n = (int(input('Digite um número: ')),
+     int(input('Digite outro valor: ')),
+     int(input('Digite mais um número: ')),
+     int(input('Digite o último número: ')))
+print(f'Você digitou os valores {n}')
+print(f'O valor 9 apareceu {n.count(9)} vez(es)')
+if 3 in n:
+    print(f'O valor 3 apareceu na {n.index(3) + 1}ª posição')
+else:
     print('O valor 3 não foi digitado em nenhuma posição')
+print(f'Os valores pares digitados foram ', end=' ')
+for c in n:
+    if c % 2 == 0:
+        print(c, end= ' ')
