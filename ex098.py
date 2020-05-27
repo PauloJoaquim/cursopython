@@ -17,6 +17,6 @@ def contador(inicio, fim, cont):
         print('FIM!')
 
 
-
+#em andamento
 contador(1, 10, 1)
 contador(10, 0, 2)
